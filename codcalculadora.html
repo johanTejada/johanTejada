@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<center>
+
+    <body>
+    
+        <table width="55" border="1">
+            <tr>
+                <td colspan="4" aling="center">
+                    <input name="display" type="text" class="color_display" id="display" size="12"></td>
+                </tr>
+            <tr>
+                <td whidth="35"> <input name="button" type="button" class="numero" id="button"value="+" onclick="sumar()"> </td>
+                <td whidth="25"> <input name="button2" type="button" class="numero" id="button2"value="-" onclick="resta()"> </td>
+                <td whidth="25"> <input name="button3" type="button" class="numero" id="button3"value="*" onclick="multiplicacion()"> </td>
+                <td whidth="25"> <input name="button4" type="button" class="numero" id="button4"value="/" onclick="division()"> </td>
+            </tr>
+            <tr>
+                <td whidth="35"> <input name="button" type="button" class="numero" id="button" value="1" onclick="mostrar_numero(1)"> </td>
+                <td whidth="25"> <input name="button2" type="button" class="numero" id="button2" value="2" onclick="mostrar_numero(2)"> </td>
+                <td whidth="25"> <input name="button3" type="button" class="numero" id="button3" value="3" onclick="mostrar_numero(3)"> </td>
+                <td whidth="25"> <input name="button4" type="button" class="numero" id="button4" value="R" onclick="raiz()"> </td>
+            </tr>
+            <tr>2
+                <td whidth="35"> <input name="button" type="button" class="numero" id="button" value="4" onclick="mostrar_numero(4)"> </td>
+                <td whidth="25"> <input name="button2" type="button" class="numero" id="button2" value="5" onclick="mostrar_numero(5)"> </td>
+                <td whidth="25"> <input name="button3" type="button" class="numero" id="button3" value="6" onclick="mostrar_numero(6)"> </td>
+                <td whidth="25"> <input name="button4" type="button" class="numero" id="button4" value="^" onclick="exponente()"> </td>
+            </tr>
+            <tr>
+                <td whidth="35"> <input name="button" type="button" class="numero" id="button" value="7" onclick="mostrar_numero(7)"> </td>
+                <td whidth="25"> <input name="button2" type="button" class="numero" id="button2" value="8" onclick="mostrar_numero(8)"> </td>
+                <td whidth="25"> <input name="button3" type="button" class="numero" id="button3" value="9" onclick="mostrar_numero(9)"> </td>
+                <td whidth="25"> <input name="button4" type="button" class="numero" id="button4" value="%" onclick="mod()"></td>
+            </tr>
+            <tr>
+                <td whidth="35"> <input name="button" type="button" class="numero" id="button" value="0" onclick="mostrar_numero(0)"> </td>
+                <td whidth="25"> <input name="button2" type="button" class="numero" id="button2" value=. onclick="mostrar_numero('.')"></td>
+                <td whidth="25"> <input name="button3" type="button" class="numero" id="button3" value="=" onclick="igual()"></td>
+                <td whidth="25"> <input name="button4" type="button" class="numero" id="button4" value="⌫" onclick="eliminar()"> </td>
+            </tr>
+        </table>
+        <script src="codCalculadora.js">
+        </script>
+    </body>
+</center>
+
+</html>
