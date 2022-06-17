@@ -1,0 +1,69 @@
+(inicio de sesión) 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="inicio_sesion.css">
+    <title>Document</title>
+       
+</head>
+<body>
+    <main class="main">
+        <div class="form">
+            <h1 class="titulo">𝕀ℕ𝕀ℂ𝕀𝔸ℝ  𝕊𝔼𝕊𝕀𝕆ℕ</h1> 
+            <img src="" class="imgLogo" alt="logo">
+            <!-- <div class="imgLogo"></div>  -->
+            <form action="./php/registro.php" method="POST" class="formulario"> 
+
+                <input type="text" name="correo" class="inputText"  id="uno" placeholder=" CORREO " require>
+
+                <input type="password"  name="contraseña" class="inputText"  id="dos" placeholder=" CONTRASEÑA " require>
+
+                <a href="#" class="enlace">recuperar contaseña </a>
+
+                <button type="submit" class="boton1">ENVIAR</button>
+            </form>
+        </div> 
+    </main>
+<script src="taller.js"></script>
+    
+</body>
+</html>
+
+(bases de datos) 
+
+<?php
+
+$host = "localhost";
+$user = "root";
+$passwords = "";
+$bd = "conectartejada";
+
+$conexion=mysqli_connect($host, $user, $passwords, $bd);
+
+?>
+
+
+(registro) 
+<?php
+        include 'basededatos.php';
+
+
+        $correo= $_POST["correo"];
+        $contraseña= $_POST["contraseña"];
+
+        $query = "INSERT INTO inicio_sesion (correo, contraseña)
+        value ('$correo','$contraseña')";
+
+        $ejcutar=mysqli_query($conexion,$query);
+
+?>
+
+
+
+
+
+
